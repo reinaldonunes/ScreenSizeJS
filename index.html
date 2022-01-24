@@ -3,27 +3,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
         <title>Qual a minha resolução?</title>
-        <link rel="stylesheet" href="assets/default.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/default.css" type="text/css" />
     </head>
     <body>
         <div>
             <h3>A RESOLUÇÃO DA TELA EM PIXELS É</h3>
             <span class="display"></span>
         </div>
-        <script>
-            const display = document.querySelector(".display");
-
-            displayMe();
-
-            window.addEventListener("resize", displayMe);
-
-            function displayMe(){
-                let widthScreen = window.innerWidth;
-                let heightScreen = window.innerHeight;
-                
-                display.innerHTML = widthScreen + "x"+heightScreen;
-            }
-
-        </script>
+        <script src="assets/screen.js"></script>
     </body>
 </html>
